@@ -1,0 +1,16 @@
+.pad-0{
+    padding:0;
+}
+
+div label{
+ text-align: left;   
+}
+
+.mylabel{
+    margin:0px;
+    padding:0px;
+  }
+
+.alignClass{
+    padding:6px 8px;
+}

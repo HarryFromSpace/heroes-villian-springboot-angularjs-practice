@@ -1,0 +1,21 @@
+Steps:-
+------------------------------------------------------------------------------------------------------------------------------
+API:- 
+
+1) Copy MyApp folder to eclipse-workspace folder.
+2) Open Eclipse and import MyApp as Maven Project from Eclipse-Workspace folder.
+3) Start just check for "sts" from eclipse market place.
+4) Open MyApp in eclipse => Find pom.xml => right click => Run As => Maven Clean => Maven Install.
+5) open Application Class => Run as java application. 
+------------------------------------------------------------------------------------------------------------------------------
+UI:- 
+
+1) double click my-hero-app folder => click folder local address location => type cmd => enter .
+2) A cmd prompt will be opened => in cmd prompt => type "npm install" => type "ng serve" or "npm start" to start server.
+3) open visual studio => open my-hero-app folder.
+------------------------------------------------------------------------------------------------------------------------------
+Browser:- 
+
+Open any browser type :- localhost:4200
+------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,10 @@
+.gapClass{
+    padding:8px;
+}
+.glyphicon-heart:before {
+    content: "\e005";
+    font-size: 16px;
+}
+.inputCheckBox{
+        height:30px; width:30px; margin:0px;
+}

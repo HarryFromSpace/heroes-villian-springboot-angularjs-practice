@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome {{owner}}!!!!
+  </h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style="border:1px solid lightgrey">
+      <div class="row">
+        <div class="card text-center">
+
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item" routerLinkActive="active" #hero>
+                <a [routerLink]="['/heroes']">Heroes</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" #villian>
+                <a [routerLink]="['/villians']">Villians</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-block">
+
+            <router-outlet></router-outlet>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

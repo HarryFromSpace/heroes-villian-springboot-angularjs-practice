@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <app-flash-message [flashObject]="alertData" *ngIf='alertVisibility'></app-flash-message>
+  <form class="form-horizontal" #editHeroTemplate="ngForm" (ngSubmit)="editHero(editHeroTemplate)">
+
+    <div class="form-group">
+      <label class="col-md-3 control-label">Hero Id</label>
+      <div class="col-md-8 form-control" style="text-align:left;">{{datum.id}}</div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-3 control-label">Hero Name</label>
+      <input class="col-md-8 form-control" name="name" value={{hero.name}} [ngModel]="hero.name" />
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-3 control-label">Hero Power</label>
+      <input class="col-md-8 form-control" name="power" value={{hero.power}} [ngModel]="hero.power" />
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-3 control-label">Hero Points</label>
+      <input class="col-md-8 form-control" type="number" name="points" value={{hero.points}} [ngModel]="hero.points" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Update Hero</button>
+    </div>
+  </form>
+
+</div>

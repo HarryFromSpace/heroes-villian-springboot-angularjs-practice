@@ -1,0 +1,25 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="padding:15px 15px 6px 15px;">
+        <div class="modal-title" style="text-align: center; font-size: 30px; color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;">{{modalHeader}}
+          <button style="text-align: right;" type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="removeModal()"
+            aria-hidden="true">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body well" style="margin:0px; padding:15px 15px 4px 15px;">
+        <app-new-hero (myEmitter2)="commitResultToParent($event)" *ngIf="clickedOption=='Add New Hero'"></app-new-hero>
+        <app-view-hero (myEmitter2)="commitResultToParent($event)" [datum]="clickedOption.data" *ngIf='myFunction("View Hero Details")'></app-view-hero>
+        <app-edit-hero (myEmitter2)="commitResultToParent($event)" [datum]="clickedOption.data" *ngIf='myFunction("Edit Hero Details")'></app-edit-hero>
+
+        <app-new-villian (myEmitter2)="commitResultToParent($event)" *ngIf="clickedOption=='Add New Villian'"></app-new-villian>
+        <app-view-villian (myEmitter2)="commitResultToParent($event)" [datum]="clickedOption.data" *ngIf='myFunction("View Villian Details")'></app-view-villian>
+        <app-edit-villian (myEmitter2)="commitResultToParent($event)" [datum]="clickedOption.data" *ngIf='myFunction("Edit Villian Details")'></app-edit-villian>
+      </div>
+      <div class="modal-footer" style="padding:10px;">
+        <button class="btn btn-primary" data-dismiss="modal" (click)="removeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

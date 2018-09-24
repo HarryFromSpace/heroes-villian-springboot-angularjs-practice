@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <app-flash-message [flashObject]="alertData" *ngIf='alertVisibility'></app-flash-message>
+    <form class="form-horizontal" #editVillianTemplate="ngForm" (ngSubmit)="editVillian(editVillianTemplate)">
+  
+      <div class="form-group">
+        <label class="col-md-3 control-label">Villian Id</label>
+        <div class="col-md-8 form-control" style="text-align:left;">{{datum.id}}</div>
+      </div>
+  
+      <div class="form-group">
+        <label class="col-md-3 control-label">Villian Name</label>
+        <input class="col-md-8 form-control" name="name" value={{villian.name}} [ngModel]="villian.name" />
+      </div>
+  
+      <div class="form-group">
+        <label class="col-md-3 control-label">Villian Power</label>
+        <input class="col-md-8 form-control" name="power" value={{villian.power}} [ngModel]="villian.power" />
+      </div>
+  
+      <div class="form-group">
+        <label class="col-md-3 control-label">Villian Points</label>
+        <input class="col-md-8 form-control" type="number" name="points" value={{villian.points}} [ngModel]="villian.points" />
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update Villian</button>
+      </div>
+    </form>
+  
+  </div>
